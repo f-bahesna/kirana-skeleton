@@ -1,11 +1,10 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import {createStore} from "vuex";
+import acme from "../modules/Acme/index";
 
-Vue.use(Vuex);
+const store = createStore({
+    modules: {
+        acme
+    }
+})
 
-export default new Vuex.Store({
-    state: {},
-    mutations: {},
-    actions: {},
-    modules: {}
-});
+export default store

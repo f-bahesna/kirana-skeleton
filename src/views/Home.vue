@@ -3,7 +3,6 @@
     <h1>
       Home Page
     </h1>
-
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquid
       impedit quod voluptatibus maiores provident, perspiciatis laborum.
@@ -15,7 +14,7 @@
 
 <script>
 export default {
-  name: "Home.vue"
+  name: "Home"
 }
 </script>
 

@@ -1,19 +1,20 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import {createRouter, createWebHistory} from "vue-router";
+import registerRoute from "@/register-route.js";
 
-Vue.use
+const env = import.meta.env
 
 const routes = [
     {
         path: "/",
         name: "Home",
-        component: Home
-    }
+        component: () => import('../views/Home.vue')
+    },
+    ...registerRoute[0]
 ];
 
-const router = new VueRouter({
+const router = createRouter({
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes
-});
+})
 
 export default router;

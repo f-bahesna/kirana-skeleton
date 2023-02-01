@@ -1,15 +1,9 @@
 <template>
-  <div>
-    <div>
-      <div>
-        <RouterLink to="/">Home</RouterLink>
-      </div>
-    </div>
-
-    <div>
-      <div>
-        <router-view />
-      </div>
-    </div>
-  </div>
+  <router-view></router-view>
 </template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
