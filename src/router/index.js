@@ -9,8 +9,11 @@ const routes = [
         name: "Home",
         component: () => import('../views/Home.vue')
     },
-    ...registerRoute[0]
 ];
+
+registerRoute.map( route => {
+    routes.push(route[0])
+})
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
