@@ -1,8 +1,5 @@
 import {createRouter, createWebHistory} from "vue-router";
 import registerRoute from "@/register-route.js";
-
-const env = import.meta.env
-
 const routes = [
     {
         path: "/",

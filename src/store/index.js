@@ -1,9 +1,9 @@
 import {createStore} from "vuex";
-import acme from "../modules/Acme/index";
+import AcmeModule from "../modules/Acme/store/index";
 
 const store = createStore({
     modules: {
-        acme
+        acme: AcmeModule
     }
 })
 
