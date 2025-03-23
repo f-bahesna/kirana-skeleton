@@ -1,9 +1,11 @@
 import vuePLugin from '@vitejs/plugin-vue'
+import tailwindcss from 'tailwindcss'
 import path from 'path'
 
 export default {
   plugins: [
-    vuePLugin()
+    vuePLugin(),
+    tailwindcss()
   ],
   server: {
     port: 8080,

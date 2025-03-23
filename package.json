@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueform/slider": "^2.1.10",
     "axios": "^1.2.6",
     "vue": "^3.2.45",
     "vue-axios": "^3.5.2",

@@ -1,5 +1,6 @@
 <template>
-  <div class="home">
+  <Navbar />
+  <div class="home container mx-auto px-4">
     <h1>
       Home Page
     </h1>
@@ -12,12 +13,16 @@
   </div>
 </template>
 
-<script>
+<script type="text/javascript">
+
+import Navbar from '@/modules/Shared/Components/Navbar.vue'
+
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    Navbar
+  }
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
