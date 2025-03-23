@@ -44,7 +44,7 @@ modules/
 │   │   ├── UserList.vue      # List of users
 │   │   ├── UserProfile.vue   # User profile page
 │   ├── store/
-│   │   ├── users.js          # Vuex store for users
+│   │   ├── index.js          # Vuex store for users, with include vuex lifecycle
 │   ├── router.js             # Routes related to users
 │   ├── index.js              # Entry point for this module
 ```
@@ -57,7 +57,7 @@ modules/
 │   │   ├── Checkout.vue      # Payment checkout page
 │   │   ├── PaymentHistory.vue # User's payment history
 │   ├── store/
-│   │   ├── payments.js       # Vuex store for payments
+│   │   ├── index.js       # Vuex store for payments, with include vuex lifecycle
 │   ├── router.js             # Routes related to payments
 │   ├── index.js              # Entry point for this module
 
