@@ -34,6 +34,34 @@ Kirana/
 ├── tailwind.config.cjs     # Tailwind configuration
 ├── vite.config.js          # Vite configuration
 ```
+### Folder Structure Example
+
+#### Users Module
+```
+modules/
+├── Users/
+│   ├── views/
+│   │   ├── UserList.vue      # List of users
+│   │   ├── UserProfile.vue   # User profile page
+│   ├── store/
+│   │   ├── users.js          # Vuex store for users
+│   ├── router.js             # Routes related to users
+│   ├── index.js              # Entry point for this module
+```
+
+#### Payments Module
+```
+modules/
+├── Payments/
+│   ├── views/
+│   │   ├── Checkout.vue      # Payment checkout page
+│   │   ├── PaymentHistory.vue # User's payment history
+│   ├── store/
+│   │   ├── payments.js       # Vuex store for payments
+│   ├── router.js             # Routes related to payments
+│   ├── index.js              # Entry point for this module
+
+```
 
 ## Getting Started
 ### Installation
