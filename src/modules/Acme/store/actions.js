@@ -1,4 +1,7 @@
 const env = import.meta.env
+/**
+ * the env file must have prefix VITE_<the key>
+ */
 
 import axios from "axios";
 /* import header from "@/store/HTTP/header.js" // if needed */
@@ -6,9 +9,9 @@ import axios from "axios";
 import mutations from "@/modules/Acme/store/mutations.js";
 
 export default {
-    async fetchAcme({commit}){
+    async fetchAcme({ commit }) {
         const response = await axios.get(`https://jsonplaceholder.typicode.com/users`)
-            .catch(() => {})
+            .catch(() => { })
 
         if (response && response.data) {
             let res = response.data
