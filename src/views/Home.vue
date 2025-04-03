@@ -1,26 +1,18 @@
 <template>
   <Navbar />
-  <div class="home container mx-auto px-4">
-    <h1>
-      Home Page
-    </h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquid
-      impedit quod voluptatibus maiores provident, perspiciatis laborum.
-      Molestias exercitationem quod ut aspernatur nostrum debitis molestiae
-      ipsam, dolores assumenda alias quidem.
-    </p>
-  </div>
+  <Hero />
 </template>
 
 <script type="text/javascript">
 
 import Navbar from '@/modules/Shared/Components/Navbar.vue'
+import Hero from '@/modules/Shared/Components/Hero.vue';
 
 export default {
   name: "Home",
   components: {
-    Navbar
+    Navbar,
+    Hero
   }
 }
 </script>
