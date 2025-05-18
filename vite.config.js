@@ -18,7 +18,12 @@ export default {
       {
         find: '@',
         replacement: path.resolve(__dirname, 'src')
-      }
+      },
+      // Uncomment these if using Web3 / crypto libraries that need Node polyfills
+      //{ find: 'process', replacement: 'process/browser' },
+      //{ find: 'stream', replacement: 'stream-browserify' },
+      //{ find: 'zlib', replacement: 'browserify-zlib' },
+      //{ find: 'util', replacement: 'util' },
     ]
   },
 }
